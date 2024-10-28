@@ -191,6 +191,11 @@ h1 {
     font-size: 100px;
 }
 
+h3 {
+    font-size: 100px;
+    text-align: center;
+}
+
 h2 {
     color: #000000;
 }
@@ -503,3 +508,8 @@ body {
     margin-left: 20px;
 }
 
+.timeless-image3 {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+}
