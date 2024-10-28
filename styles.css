@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .header a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+  }
+  
+  .header a:hover {
+    color: #666;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .search-bar {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .hidden-header {
+    transform: translateY(-100%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 1px solid transparent;
+}
+
+.vinyl {
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    z-index: 1000;
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: #666;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.search-bar {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.vinyl-jacket {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 1px;
+    width: 200px;
+    height: 200px;
+    perspective: 200px;
+    transform-style: preserve-3d;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0)),
+        url('https://i.imgur.com/pXUkjKw.png');
+    background-size: cover;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.6),
+        inset 1px 0 1px rgba(0, 0, 0, 0.3),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    color: #000000;
+}
+
+
+.vinyl-jacket::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/pXUkjKw.png');
+    background-size: cover;
+    transform: translateY(8%) scaleY(-1) scaleX(1.18) rotateX(-20deg);
+    -webkit-mask-image: linear-gradient(transparent 80%, rgba(255, 255, 255, 1));
+    mask-image: linear-gradient(transparent 80%, rgba(255, 255, 255, 0.1));
+    pointer-events: none;
+}
+
+.vinyl-wrapper {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    top: 0;
+    left: 16%;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-8px);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.6));
+    transition: left .4s;
+}
+
+.vinyl-jacket:hover > .vinyl-wrapper {
+    left: 62%;
+}
+
+.vinyl {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #21201e;
+    background-image: 
+        conic-gradient(from 45deg,
+            rgba(255, 255, 255, 0.25),
+            transparent 6.25% 43.75%,
+            rgba(255, 255, 255, 0.25) 50%,
+            transparent 56.25% 93.75%,
+            rgba(255, 255, 255, 0.25)),
+        radial-gradient(
+            farthest-side, transparent 0 calc(100% - 1px),
+            #342d2b 95.23% 100%
+        ),
+        radial-gradient(
+            farthest-side,
+            transparent 0 95.23%,
+            #342d2b 95.23% 100%
+        ),
+        radial-gradient(
+            farthest-side,
+            rgba(255, 255, 255, 0.06) 0 40%,
+            rgba(0, 0, 0, 0.2) 0 40% calc(40% + 1px),
+            rgba(0, 0, 0, 0.12) calc(40% + 1px) 48%,
+            #282826 48% calc(48% + 1px),
+            transparent calc(48% + 1px) 100%
+        ),
+        radial-gradient(
+            farthest-side,
+            transparent 63.8%,
+            rgba(255, 255, 255, 0.03) 63.8% calc(63.8% + 1px),
+            transparent calc(63.8% + 1px) 81.9%,
+            rgba(255, 255, 255, 0.03) 81.9% calc(81.9% + 1px),
+            transparent 0
+        ),
+        repeating-radial-gradient(
+            farthest-side,
+            rgba(255, 255, 255, 0.005) 0 1px,
+            transparent 1px 2px
+        ),
+        repeating-radial-gradient(
+            farthest-side,
+            rgba(255, 255, 255, 0.005) 0 1px,
+            transparent 1px 5px
+        ),
+        repeating-radial-gradient(
+            farthest-side,
+            #1e1d1c,
+            #21201e 12.5%
+        );
+    -webkit-mask-image: radial-gradient(transparent 2.4%, #fff 2.4%);
+    box-shadow:
+        inset 0 0 1px 1px #000,
+        inset 0 0 0 2px rgba(110, 100, 101, 0.6);
+}
+
+.vinyl::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    border: 1px solid #3b3b38;
+    border-radius: 50%;
+    width: 33.33%;
+    height: 33.33%;
+    background-image: url('https://i.imgur.com/pXUkjKw.png');
+    background-size: cover;
+    image-rendering: crisp-edges;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    z-index: 1000;
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: #666;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.search-bar {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.white-space {
+    height: 20px;
+    background-color: white;
+    width: 100%; 
+}
+
+.white-space2 {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+}
+
+  
+  .video-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  
+  .vinyl-jacket1 {
+    background-image: url('https://images.complex.com/complex/images/c_fill,g_center,w_1200/fl_lossy,pg_1,q_auto/hzugce2ivvojyvf8lrny/daniel-caesar-freudian-cover');
+  }
+
+  .vinyl-jacket1 .vinyl::after {
+    background-image: url('https://preview.redd.it/yysig3ob49c01.jpg?auto=webp&s=6f952c00a16a94b3b3aabd29de3f0cdc613ac34a');
+  }
+  
+  .vinyl-jacket2 {
+    background-image: url('https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg');
+  }
+
+  .vinyl-jacket2 .vinyl::after {
+    background-image: url('https://ih1.redbubble.net/image.1596824815.5550/st,small,507x507-pad,600x600,f8f8f8.jpg');
+  }
+  
+  .vinyl-jacket3 {
+    background-image: url('https://images.genius.com/f5fc1efc4235333dec24e111dc7c5e2d.1000x1000x1.jpg');
+  }
+
+  .vinyl-jacket3 .vinyl::after {
+    background-image: url('https://store.warnermusic.ca/cdn/shop/files/SECONDIMAGE.jpg?v=1709574928&width=720');
+  }
+
+
+  
+  .vinyl-jacket {
+    margin-bottom: 20px;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.product__title {
+    margin: 10px 0;
+}
+
+.product__description {
+    margin: 5px 0;
+}
+
+.no-js-hidden {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.left-align {
+    text-align: left;
+}
+
+
+.timeless-pieces-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.timeless-image2 {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+
